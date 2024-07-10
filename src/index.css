@@ -1,0 +1,104 @@
+body {
+  background: linear-gradient(135deg, #be60ab, #4ebf7f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.budget-worksheet {
+  background-color: #131313;
+  color: white;
+  width: 800px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  height: 5px;
+  margin: 0;
+}
+
+.logo {
+  font-size: 1.2em;
+  color: #00ffff;
+}
+
+section.summary {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+section.summary > div {
+  text-align: center;
+}
+
+section.summary h2 {
+  margin: 0 0 10px 0;
+}
+
+section.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+section.details .breakdown {
+  flex: 1;
+}
+
+section.details .breakdown ul {
+  list-style: none;
+  padding: 0;
+}
+
+section.details .breakdown ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+section.details .chart {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.expenses-list {
+  margin-top: 20px;
+}
+
+section.expenses-list h2 {
+  margin: 0 0 10px 0;
+  color: #ff0000;
+}
+
+section.expenses-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+section.expenses-list ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+section.expenses-list .total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-weight: bold;
+}
