@@ -3,7 +3,7 @@ import TransactionDetails from '../Components/TransactionDetails'
 
 const Show = () => {
   return (
-    <div>Show
+    <div>
       <TransactionDetails/>
     </div>
   )

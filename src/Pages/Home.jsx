@@ -4,7 +4,7 @@ import React from 'react';
 
 
 const Home = () => {
-  return <h1>Welcome to Budget Boss 😎!</h1>;
+  return <h1> Welcome to Budget Boss 😎!</h1>;
 };
 
 export default Home;

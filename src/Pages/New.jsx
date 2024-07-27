@@ -3,7 +3,7 @@ import TransactionNewForm from '../Components/TransactionNewForm'
 
 const New = () => {
   return (
-    <div>New
+    <div>
       <TransactionNewForm/>
     </div>
   )

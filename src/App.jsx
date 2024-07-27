@@ -1,23 +1,33 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import NavBar from './Components/NavBar';
-import Home from './Pages/Home';
-import TransactionDetails from './Components/TransactionDetails';
-import TransactionEditForm from './Components/TransactionEditForm';
-import TransactionNewForm from './Components/TransactionNewForm';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import './App.css'
 
-const App = () => {
+import Edit from './Pages/Edit'
+//import FourOFour from './Pages/FourOFour'
+import Home from './Pages/Home'
+import Index from './Pages/Index'
+import Show from './Pages/Show'
+import New from './Pages/New'
+import NavBar from './Components/NavBar'
+//import TransactionEditForm from './Components/TransactionEditForm'
+
+function App() {
+
   return (
-    <Router>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/transactions/:id" element={<TransactionDetails />} />
-        <Route path="/transactions/:id/edit" element={<TransactionEditForm />} />
-        <Route path="/new" element={<TransactionNewForm />} />
-      </Routes>
-    </Router>
-  );
-};
+    <div>
+      <Router>
+        <NavBar/>
+        <main>
+          <Routes>
+            <Route path='/' element={ <Home/>} />
+            <Route path='/transactions' element={<Index/> } />
+            <Route path='/transactions/:id' element={<Show/> } />
+            <Route path='/transactions/:id/edit' element={ <Edit/>} />
+            <Route path='/transactions/new' element={<New/> } />
+          </Routes>
+        </main>
+      </Router>
+    </div>
+  )
+}
 
-export default App;
+export default App

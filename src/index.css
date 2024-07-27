@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(135deg, #be60ab, #4ebf7f);
+  background: linear-gradient(135deg, #e44389, #4cd083);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,8 +9,8 @@ body {
 }
 
 .budget-worksheet {
-  background-color: #131313;
-  color: white;
+  background-color: #060606;
+  color: rgb(253, 253, 253);
   width: 800px;
   padding: 20px;
   border-radius: 8px;
@@ -81,7 +81,7 @@ section.expenses-list {
 
 section.expenses-list h2 {
   margin: 0 0 10px 0;
-  color: #ff0000;
+  color: #9eed26;
 }
 
 section.expenses-list ul {

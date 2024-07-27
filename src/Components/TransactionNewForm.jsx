@@ -31,21 +31,28 @@ const TransactionNewForm = () => {
   };
 
   return (
-    <form className="transaction-form" onSubmit={handleSubmit}>
-      <label>Date:</label>
-      <input type="date" name="date" value={transaction.date} onChange={handleChange} required />
-      <label>Name:</label>
-      <input type="text" name="item_name" value={transaction.item_name} onChange={handleChange} required />
-      <label>Amount:</label>
-      <input type="number" name="amount" value={transaction.amount} onChange={handleChange} required />
-      <label>From:</label>
-      <input type="text" name="from" value={transaction.from} onChange={handleChange} required />
-      <label>Category:</label>
-      <input type="text" name="category" value={transaction.category} onChange={handleChange} required />
-      <button type="submit">Create Transaction</button>
-    </form>
+    <div className="container">
+      <h1>Add a new item</h1>
+      <form className="card" onSubmit={handleSubmit}>
+        <label htmlFor="date">Date</label>
+        <input id="date" type="date" value={transaction.date} onChange={handleChange} required />
+
+        <label htmlFor="item_name">Name</label>
+        <input id="item_name" value={transaction.item_name} onChange={handleChange} required />
+
+        <label htmlFor="amount">Amount</label>
+        <input id="amount" type="number" value={transaction.amount} onChange={handleChange} required />
+
+        <label htmlFor="from">From</label>
+        <input id="from" value={transaction.from} onChange={handleChange} required />
+
+        <label htmlFor="category">Category</label>
+        <input id="category" value={transaction.category} onChange={handleChange} required />
+
+        <input className="button" type="submit" value="Create New Item" />
+      </form>
+    </div>
   );
 };
-
 export default TransactionNewForm;
 
